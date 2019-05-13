@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+<h1> my Sample App</h1>
+<div ng-app="" ng-init="students=[{name:'std1',age:10}, {name:'std2',age:20}]">
+<p>Enter your Name/Text : <input type="text" ng-model="name"></p>
+<p>hey <span ng-bind="name"></span> !</p>
+
+
+<p>List of students: </p>
+
+<ul>
+<li ng-repeat = "std in students">
+
+{{'name:' + std.name + ' ' + 'age:' + std.age }}
+
+</li>
+
+</ul>
+
+</div>
+
+
+
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+      </script>
+</body>
+
+</html>
